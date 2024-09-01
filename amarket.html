@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6f7f8;
+        }
+        .header {
+            background-color: #ffffff;
+            padding: 10px 20px;
+            border-bottom: 1px solid #e6e6e6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .header input, .header select {
+            margin-right: 10px;
+            padding: 5px;
+            font-size: 14px;
+        }
+        .main-content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #ffffff;
+            border: 1px solid #e6e6e6;
+            border-radius: 4px;
+        }
+        .post {
+            padding: 10px;
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .post:last-child {
+            border-bottom: none;
+        }
+        .field-label {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with input fields -->
+    <div class="header">
+        <input type="text" placeholder="Product Name" id="product-name">
+        <input type="text" placeholder="Author/Company Name" id="author-name">
+        <input type="text" placeholder="Product Website (Optional)" id="product-website">
+        <select id="availability">
+            <option value="available">Available</option>
+            <option value="not-available">Not Available</option>
+        </select>
+        <input type="text" placeholder="Price" id="price">
+        <input type="datetime-local" id="timestamp">
+    </div>
+
+    <!-- Main content area -->
+    <div class="main-content">
+        <!-- Example post -->
+        <div class="post">
+            <div class="field">
+                <span class="field-label">Product Name:</span> Example Product
+            </div>
+            <div class="field">
+                <span class="field-label">Product Description:</span> A brief description of how to purchase or additional details.
+            </div>
+            <div class="field">
+                <span class="field-label">Author/Company Name:</span> Example Company
+            </div>
+            <div class="field">
+                <span class="field-label">Availability:</span> Yes
+            </div>
+            <div class="field">
+                <span class="field-label">Price:</span> $99.99
+            </div>
+            <div class="field">
+                <span class="field-label">Product Website:</span> <a href="#">www.example.com</a>
+            </div>
+            <div class="field">
+                <span class="field-label">Timestamp:</span> 2024-09-01 10:30:00
+            </div>
+            <div class="field">
+                <span class="field-label">Link to Image:</span> <a href="#">View Image</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
